@@ -69,4 +69,9 @@ button {
     img {
         width: 400px;
     }
-}    
+}
+@media (min-width: 768px) {
+    .container2 {
+        display: none;
+    }
+}
