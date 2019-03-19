@@ -75,3 +75,8 @@ button {
         display: none;
     }
 }
+@media (max-width: 576px) {
+.cities {
+    display: none;
+}
+}
