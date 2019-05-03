@@ -1,0 +1,42 @@
+h1 {
+  color: red;
+  width: 60%;
+  margin: 5% auto;
+}
+body {
+    width: 60%;
+  margin: 5% auto;
+  border: solid red;
+}
+main {
+  color: blue;
+  width: 60%;
+  margin: 5% auto;
+  background:transparent red;
+}
+article {
+  margin: 1%;
+  border: solid red 2px;
+  background: bisque;
+}
+article > h3 {
+  font-size: 2em;
+}
+header {
+  text-align: center;
+}
+header:hover > h1 {
+  color:blue;
+}
+h3 {
+  color: darkmagenta;
+}
+footer {
+  text-align: center;
+}
+article:hover h3 {
+  color: red;
+}
+article:hover {
+  color: black;
+}

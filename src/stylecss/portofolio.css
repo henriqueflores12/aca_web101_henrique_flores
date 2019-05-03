@@ -1,0 +1,50 @@
+body {
+    
+        width: 1780px;
+  height: 840px;  
+  padding: 50px;
+  background: 
+  border: 1px solid red;
+}
+header {
+        
+        width: 1050px;
+        height: 80px;
+}
+header {
+        text-align: center;
+}
+header:hover {
+        color: crimson;
+}
+nav {
+        display: grid;
+        width: 90px;
+        height: 500px;
+        grid-row-gap: 130px;
+        
+
+        
+        
+}
+button {
+        text-align: left;
+        
+}
+button:hover {
+        color:blue;
+}
+li {
+        position: relative;
+}
+li {
+
+ position: absolute;
+  top: 160px;
+  right: 1200px;
+  left: 200px;
+}
+.text {
+ text-align: center;
+ 
+}

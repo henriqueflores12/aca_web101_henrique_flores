@@ -1,0 +1,194 @@
+body, html {
+    height: 100vh;
+    background-image: url(http://cdn.cnn.com/cnnnext/dam/assets/190225164104-08-tripadvisor-best-beaches-2019-seven-mile-cayman.jpg)
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-template-rows: repeat(auto,5);
+    grid-template-areas: 
+         "sect1"
+         "sect2"
+         "sect3"
+         "main"
+         "footer"; 
+ 
+}
+main {
+    background-image: url(https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-0,0000-1600,0000-900,0000/publish/content/dam/fourseasons/images/web/BOR/BOR_1131_aspect16x9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+
+
+
+
+aside {
+    grid-area: sidebars;
+    background-image: url(https://amp.businessinsider.com/images/5101513aecad04bb07000000-750-563.jpg)   
+
+}
+ul {
+    line-height: 2em;
+    
+    
+
+}
+footer ul  {
+    display: flex;
+     flex-direction: row;
+     justify-content: center;
+     justify-content: space-between;
+
+    /* margin-top: 0%; */
+    
+}
+header {
+
+    grid-area: header;
+    grid-area: sect1;
+    background-image: url(http://worldlandforms.com/landforms/wp-content/uploads/2015/03/Beach.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
+
+section:nth-of-type(2) {
+    grid-area: sect2;
+    background-color:yellow;
+}
+section:nth-of-type(3) {
+    grid-area: sect3;
+    background-color:brown;
+}
+main {
+    grid-area: main;
+    background-color: blueviolet;
+}
+footer {
+    grid-area: footer;
+    background-image: url(https://amp.thisisinsider.com/images/5bfec49248eb12058423acf7-750-562.jpg);
+
+}
+h2 {
+    margin-bottom: 0%;
+    text-align: center;
+}
+@media (min-width: 576px) {
+    body{
+        margin: 0;
+        display: grid;
+        grid-auto-columns: auto 27% 27% 27%;
+        grid-template-rows: 8% 30% auto 10%;
+        grid-template-areas: 
+        "sidebars header header header"
+        "sidebars sect1  sect2  sect3"
+        "sidebars main   main   main"
+        "sidebars footer footer footer"
+    }
+    .section2{
+        visibility: hidden;
+    }
+
+}
+
+
+@media only screen and (min-width:768px) {
+    body {
+        margin: 0;
+        display: grid;
+        grid-auto-columns: auto 27% 27% 27%;
+        grid-template-rows: 8% 30% auto 10%;
+        grid-template-areas: 
+        "sidebars header header header"
+        "sidebars sect1  sect2  sect3"
+        "sidebars main   main   main"
+        "sidebars footer footer footer"
+
+    }
+    .section2{
+        visibility: visible;
+        background-image: url(https://s3-ap-southeast-1.amazonaws.com/tz-sg/image/destination/2272617/2272617.jpg)
+    }
+    .section3{
+        background-image: url(https://cdn.travelpulse.com/images/efe169a5-93e1-e111-aea6-001a4bd1ca5c/f3a4611b-e5f7-4f52-8e01-e9b5612cd5e5/630x355.jpeg)
+
+    }
+}
+
+@media (max-width: width 839px){
+body { 
+    display: grid;
+}
+    
+.section2{
+    visibility: visible;
+    
+}
+
+
+}
+/* -------------- MAIN RULES ------------- */
+
+.calculator {
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    margin: 100px auto 0;
+    text-align: center;
+    background-color: gray;
+    box-shadow: 0 0 30px grey;
+    border-radius: 4px;
+    float: right;
+}
+
+.calculator__form {
+    height: 100%;
+    padding: 20px;
+}
+
+.calculator__row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator__display {
+    margin: 0 0 20px;
+    width: 100%;
+    border: 1px solid darkslateblue;
+    padding: 4px 2px;
+    text-align: right;
+    font: 700 16px/1 Arial, sans-serif;
+    color: darkslateblue;
+    background-color: whitesmoke;
+}
+
+.calculator__key {
+    width: 41px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    text-transform: uppercase;
+}
+
+.calculator__key--equal {
+    width: 98px;
+}
+
+.calculator__key:hover {
+    background-color: yellow;
+    font-weight: 700;
+}
+
+.calculator__key::-moz-focus-inner {
+    border: none
+}
